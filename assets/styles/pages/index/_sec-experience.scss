@@ -1,0 +1,52 @@
+.sec-experience {
+  padding: 80px 0;
+
+  &__head {
+    .main-heading {
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: left;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 30px;
+
+    .experience {
+      display: flex;
+      justify-content: space-between;
+
+      &__title {
+        font-size: 26px;
+      }
+
+      &__main {
+        width: 40vw;
+
+        .btn {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 20px;
+          text-align: right;
+
+          a {
+            width: auto;
+            padding: 17px 60px;
+            border: 1px solid #222;
+            border-radius: 25px;
+            transition-duration: 0.4s;
+
+            &:hover {
+              color: #fff;
+              background-color: #cf000e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.sec-about {
+  padding: 200px 0;
+
+  &__head {
+    .main-heading {
+      font-size: 38px;
+      text-align: sans-serif;
+    }
+  }
+
+  &__body {
+    margin-top: 100px;
+
+    .slide-list {
+      display: flex;
+
+      &__img {
+        width: 30vw;
+        margin: 0 20px;
+
+        img {
+          width: 30vw;
+        }
+      }
+    }
+  }
+}

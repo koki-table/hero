@@ -5,6 +5,7 @@ import config from './config'
 const common = {
   dir: {
     assets: 'assets',
+    // video: 'video',
     images: 'images',
     includes: 'includes',
     pages: 'pages',
@@ -14,6 +15,7 @@ const common = {
   },
   ext: {
     images: '.+(png|jp?(e)g|gif|svg)',
+    // video: '.mp4',
     pages: '.ejs',
     scripts: '.js',
     styles: '.scss'
@@ -26,6 +28,9 @@ common.srcPaths = {
   images: `${config.srcDir}/${common.dir.assets}/${common.dir.images}/**/*${
     common.ext.images
   }`,
+  // video: `${config.srcDir}/${common.dir.assets}/${common.dir.video}/**/*${
+  //   common.ext.video
+  // }`,
   includes: `${config.srcDir}/${common.dir.includes}/**/*${common.ext.pages}`,
   pages: `${config.srcDir}/${common.dir.pages}/**/*${common.ext.pages}`,
   scripts: `${config.srcDir}/${common.dir.assets}/${common.dir.scripts}/**/*${

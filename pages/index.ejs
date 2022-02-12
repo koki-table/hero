@@ -1,49 +1,212 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head prefix="og: http://ogp.me/ns#">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="description" content="" />
 
-  <title>Document</title>
-  <meta name="description" content="">
+    <meta property="og:title" content="" />
+    <!-- To support Twitter Cards you need to fill in the content. -->
+    <meta property="og:type" content="website" />
+    <!-- You need to fill in the content with "website" for the top page, and "article" for the other pages. -->
+    <meta property="og:image" content="" />
+    <!-- You need to fill in the content with the production URL of the image. -->
+    <meta property="og:url" content="" />
+    <!-- You need to fill in the content with the production URL of this page. -->
+    <meta property="og:description" content="" />
+    <!-- To support Twitter Cards this tag is required, and you need to fill in the content. -->
+    <meta name="twitter:card" content="summary" />
 
-  <meta property="og:title" content=""><!-- To support Twitter Cards you need to fill in the content. -->
-  <meta property="og:type" content="website"><!-- You need to fill in the content with "website" for the top page, and "article" for the other pages. -->
-  <meta property="og:image" content=""><!-- You need to fill in the content with the production URL of the image. -->
-  <meta property="og:url" content=""><!-- You need to fill in the content with the production URL of this page. -->
-  <meta property="og:description" content=""><!-- To support Twitter Cards this tag is required, and you need to fill in the content. -->
-  <meta name="twitter:card" content="summary">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('/gtm-head') %>
 
-  <%- include('/gtm-head') %>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="stylesheet" href="/assets/styles/pages/common/style.css" />
+    <link rel="stylesheet" href="/assets/styles/pages/index/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="/assets/styles/main.css">
-  <link rel="stylesheet" href="/assets/styles/pages/common/style.css">
-  <link rel="stylesheet" href="/assets/styles/pages/index/style.css">
-</head>
+  <body>
+    <%- include('/gtm-body') %>
 
-<body>
+    <div class="l-page">
+      <%- include('/header') %>
 
-  <%- include('/gtm-body') %>
+      <main class="l-main">
+        <section class="sec-mv">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ELtvAPKf9zQ?controls=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=ELtvAPKf9zQ&rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="sec-mv__video"
+          ></iframe>
+        </section>
+        <section class="sec-about">
+          <div class="l-container">
+            <div class="sec-about__head">
+              <h2 class="main-heading">
+                Good Usability, Good Quality
+              </h2>
+            </div>
+            <div class="sec-about__body">
+              <ul class="slide-list">
+                <li class="slide-list__img">
+                  <img src="/assets/images/pages/index/concept-1.jpg" alt="" />
+                </li>
+                <li class="slide-list__img">
+                  <img src="/assets/images/pages/index/concept-1.jpg" alt="" />
+                </li>
+                <li class="slide-list__img">
+                  <img src="/assets/images/pages/index/concept-1.jpg" alt="" />
+                </li>
+                <li class="slide-list__img">
+                  <img src="/assets/images/pages/index/concept-1.jpg" alt="" />
+                </li>
+                <li class="slide-list__img">
+                  <img src="/assets/images/pages/index/concept-1.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-  <div class="l-page">
+        <section class="sec-concept">
+          <div class="l-container">
+            <div class="sec-concept__head">
+              <h2 class="main-heading">
+                Concept
+              </h2>
+            </div>
+            <div class="sec-concept__body">
+              <div class="concept">
+                <h3 class="concept__title">おいしい食事を、毎日手間なく</h3>
+                <p class="concept__main">
+                  Leggieroは考えられる限りの最小の存在かつ、あなたの暮らしに役立つ最大の用具。「使いやすく、美しい」用具を作ることは、多くの作り手が目指す理想の形です。私たちは「質実柔健」という独自の思想のもと、新しい食事体験を提供するためにこの鍋を作りました。簡素な佇まいでありながらも上質であり、毎日使いたくなるような実用性を兼ね備える。あなたやあなたの大切な人の心身を柔らげる食事が、内側からより美しく健全な姿に導いていく――私たちが理想とする鍋は、人を想う心によって完成します。是非、あなた自身やあなたの大切な人達のためにご活用ください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <%- include('/header') %>
+        <section class="sec-img">
+          <div class="sec-img__bg"></div>
+        </section>
 
-    <main class="l-main">
+        <section class="sec-experience">
+          <div class="l-container">
+            <div class="sec-experience__head">
+              <h2 class="main-heading">
+                experience
+              </h2>
+            </div>
+            <div class="sec-experience__body">
+              <div class="experience">
+                <h3 class="experience__title">おいしい食事を、毎日手間なく</h3>
+                <div class="experience__main">
+                  <p class="text">
+                    Leggieroは考えられる限りの最小の存在かつ、あなたの暮らしに役立つ最大の用具。「使いやすく、美しい」用具を作ることは、多くの作り手が目指す理想の形です。私たちは「質実柔健」という独自の思想のもと、新しい食事体験を提供するためにこの鍋を作りました。簡素な佇まいでありながらも上質であり、毎日使いたくなるような実用性を兼ね備える。あなたやあなたの大切な人の心身を柔らげる食事が、内側からより美しく健全な姿に導いていく――私たちが理想とする鍋は、人を想う心によって完成します。是非、あなた自身やあなたの大切な人達のためにご活用ください。
+                  </p>
+                  <div class="btn"><a href="">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    </main><!-- .l-main -->
+        <section class="sec-copy">
+          <div class="sec-copy__body">
+            <h3 class="copy">
+              Good design goes unnoticed.<br />it strips away the unnecessary,
+              and<br />leaves us with what's essential.
+            </h3>
+          </div>
+        </section>
 
-    <%- include('/footer') %>
+        <section class="sec-cm target">
+          <div class="l-container">
+            <div class="sec-cm__inner">
+              <div class="copy">
+                <div class="sec-cm__head">
+                  <h2 class="main-heading">
+                    cm
+                  </h2>
+                </div>
+                <div class="sec-cm__body">
+                  <div class="cm">
+                    <h3 class="cm__title">おいしい食事を、毎日手間なく</h3>
+                    <div class="cm__main">
+                      <p class="text">
+                        Leggieroは考えられる限りの最小の存在かつ、あなたの暮らしに役立つ最大の用具。「使いやすく、美しい」用具を作ることは、多くの作り手が目指す理想の形です。私たちは「質実柔健」という独自の思想のもと、新しい食事体験を提供するためにこの鍋を作りました。簡素な佇まいでありながらも上質であり、毎日使いたくなるような実用性を兼ね備える。あなたやあなたの大切な人の心身を柔らげる食事が、内側からより美しく健全な姿に導いていく――私たちが理想とする鍋は、人を想う心によって完成します。是非、あなた自身やあなたの大切な人達のためにご活用ください。
+                      </p>
+                      <div class="btn"><a href="">Read More</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video">
+                <iframe
+                  src="https://www.youtube.com/embed/ELtvAPKf9zQ?controls=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=ELtvAPKf9zQ&rel=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="sec-mv__video"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  </div><!-- .l-page -->
+        <section class="sec-pickup" id="triger">
+          <div class="l-container">
+            <div class="sec-pickup__head">
+              <h2 class="main-heading">
+                Amazing Technology
+              </h2>
+              <p class="sub-heading">
+                Leggieroの驚きの技術
+              </p>
+            </div>
+            <div class="sec-pickup__body">
+              <div class="pickup-img">
+                <img src="/assets/images/pages/index/tech.jpg" alt="" />
+              </div>
+              <div class="pickup-text">
+                <div class="pickup-text__head">
+                  <h3 class="main-heading">
+                    製造技術が生み出した鍋の性能と<br />オート調理機能で<br />「もっと手間なく」
+                  </h3>
+                </div>
+                <div class="pickup-text__body">
+                  <div class="text">
+                    ガスコンロの機能部品の開発に従事してきた経験と精巧な技術によって、高い熱伝導性と蓄熱性を持つ無水調理鍋でありながら、圧倒的な軽さを実現。また、リンナイが独自に開発した火力調整機構とSiセンサーを用いた火力制御技術により、対応コンロがあればオート調理も可能に。驚きの料理体験と健全な食事体験を提供します。
+                  </div>
+                  <ul class="btn">
+                    <li class="btn__item"><a href="">製造技術</a></li>
+                    <li class="btn__item"><a href="">オート調理技術</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- .l-main -->
 
-  <script src="/assets/scripts/vendors.js" defer></script>
-  <script src="/assets/scripts/pages/common.js" defer></script>
-  <script src="/assets/scripts/pages/index.js" defer></script>
+      <!-- <div id="player"></div> -->
 
-</body>
+      <%- include('/footer') %>
+    </div>
+    <!-- .l-page -->
 
+    <script src="/assets/scripts/vendors.js" defer></script>
+    <script src="/assets/scripts/pages/common.js" defer></script>
+    <script src="/assets/scripts/pages/index.js" defer></script>
+  </body>
 </html>
