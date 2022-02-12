@@ -1,25 +1,18 @@
 const myFunc = function() {
   const target = document.getElementsByClassName('target')
-  const positionTriger = document.getElementById('triger')
-  //   const position = positionTriger.getBoundingClientRect(scrollY)
+  const position = Math.floor(window.innerHeight * 0.7)
+  const positionRemove = Math.floor(window.innerHeight * 0.9)
 
-  positionTriger.addEventListener('scroll', getPosition)
+  for (let i = 0; i < target.length; i++) {
+    // let offsetTop = Math.floor(target[i].getBoundingClientRect().top)
+    let offsetBottom = Math.floor(target[i].getBoundingClientRect().bottom)
 
-  function getPosition(e) {
-    let clientY = e.clientY // =>ページ左上からのy座標
-    console.log(clientY)
+    if (offsetBottom < position) {
+      target[i].classList.add('is-active')
+    }
 
-    for (let i = 0; i < target.length; i++) {
-      let offsetTop = Math.floor(target[i].getBoundingClientRect().top)
-      let offsetBottom = Math.floor(target[i].getBoundingClientRect().bottom)
-
-      if (offsetTop < clientY) {
-        target[i].classList.add('is-active')
-      }
-
-      if (offsetBottom < 0) {
-        target[i].classList.remove('is-active')
-      }
+    if (offsetBottom > positionRemove) {
+      target[i].classList.remove('is-active')
     }
   }
 }
